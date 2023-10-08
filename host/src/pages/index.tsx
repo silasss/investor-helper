@@ -1,19 +1,7 @@
-// import dynamic from 'next/dynamic';
-
-// const DynamicHeader = dynamic(() => import('dashboard/dashboard'), {
-//   loading: () => <p>Loading...</p>,
-// })
-
-// import { lazy } from 'react';
 import dynamic from 'next/dynamic';
 
-// let DynamicHeader: any = () => null;
-// if (process.browser) {
-//   DynamicHeader = lazy(() => import('dashboard/header'));
-// }
-
 let DynamicHeader: any = () => <p>Loading...</p>;
-if (process.browser) {
+if (typeof window !== 'undefined') {
   DynamicHeader = dynamic(() => import('dashboard/header'), {
     loading: () => <p>Loading...</p>,
   })

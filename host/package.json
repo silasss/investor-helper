@@ -10,12 +10,14 @@
   },
   "dependencies": {
     "@module-federation/nextjs-mf": "^7.0.8",
+    "feather-route-matcher": "^4.0.0",
     "next": "13.5.4",
     "react": "^18",
     "react-dom": "^18",
     "webpack": "^5.88.2"
   },
   "devDependencies": {
+    "@types/feather-route-matcher": "^4.0.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
