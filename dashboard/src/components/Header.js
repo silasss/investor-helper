@@ -1,5 +1,5 @@
 const Header = () => {
-  return <div>This is a header!</div>
+  return <div>This header is placed within the dashboard application!</div>
 };
 
 export default Header;

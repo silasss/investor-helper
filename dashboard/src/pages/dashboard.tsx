@@ -1,9 +1,11 @@
 import React from "react";
-import Header from '../components/Header'
+import { HeaderPublicArea } from 'shared';
 
 const Dashboard = () => {
   return <>
-      <Header />
+      <HeaderPublicArea>
+        <div>I am the header!</div>
+      </HeaderPublicArea>
       <div>Im the dashboard</div>
     </>;
 };
