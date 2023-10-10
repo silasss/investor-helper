@@ -1,4 +1,4 @@
-import { store } from '../app/store';
+import { store } from 'shared';
 import { Provider } from 'react-redux';
 import { Menu } from '../components/organisms/Menu';
 

@@ -11,7 +11,7 @@ const nextConfig = {
         new NextFederationPlugin({
           name: 'dashboard',
           remotes: {
-            // host: `host@http://localhost:3001/_next/static/chunks/remoteEntry.js`,
+            // host: `host@http://localhost:3000/_next/static/chunks/remoteEntry.js`,
           },
           filename: 'static/chunks/remoteEntry.js',
           exposes: {

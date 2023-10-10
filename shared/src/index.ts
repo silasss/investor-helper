@@ -4,6 +4,7 @@ export { default as HeaderPublicArea } from "./components/organisms/HeaderPublic
 export { default as Button } from "./components/atoms/Button";
 
 export * from "./app/store";
-export * from "./app/hooks";
+export * from "./reducers/user/user.selectors";
+export * from "./reducers/user/user.actions";
 
 export * from "./utils/constants";
