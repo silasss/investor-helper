@@ -1,4 +1,4 @@
-import { createAsyncThunk } from "@reduxjs/toolkit";
+import { createAsyncThunk } from "shared";
 import { Dashboard } from "../../models/interfaces/dashboard.interface";
 import { DashboardService } from "./dashboard.service";
 

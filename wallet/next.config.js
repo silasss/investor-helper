@@ -1,5 +1,4 @@
 const NextFederationPlugin = require('@module-federation/nextjs-mf');
-const dependencies = require("./package.json").dependencies;
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -8,12 +7,11 @@ const nextConfig = {
     if (!options.isServer) {
       config.plugins.push(
         new NextFederationPlugin({
-          name: 'dashboard',
+          name: 'wallet',
           remotes: {},
           filename: 'static/chunks/remoteEntry.js',
           exposes: {
-            './dashboard': './src/pages/dashboard.tsx',
-            './header': './src/components/Header.js',
+            './wallet': './src/pages/wallet.tsx',
             './pages-map': './src/pages-map.ts',
           },
           shared: {

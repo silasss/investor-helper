@@ -21,6 +21,9 @@ const Menu = () => {
     <li>
       <Link href="/dashboard">Dashboard</Link>
     </li>
+    <li>
+      <Link href="/wallet">Wallet</Link>
+    </li>
     {user && (
       <li>
         Olá, {user?.name}

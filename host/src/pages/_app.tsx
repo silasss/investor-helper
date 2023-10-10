@@ -1,5 +1,5 @@
-import { store } from 'shared';
 import { Provider } from 'react-redux';
+import { store } from 'shared';
 import { Menu } from '../components/organisms/Menu';
 
 import { AppProps } from 'next/app'
@@ -10,5 +10,5 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       <Menu />
       <Component {...pageProps} />
     </Provider>
-  )
+  )  
 }

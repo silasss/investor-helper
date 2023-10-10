@@ -1,2 +1,1 @@
-declare module "dashboard/dashboard";
-declare module "dashboard/header";
+declare module 'dashboard/header';

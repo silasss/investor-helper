@@ -8,7 +8,7 @@ As a helper, it will allows the user to create themselves wallet of investment, 
 
 In a dashboard module it will start monitoring that prices and alert user when some goals rule was reached.
 
-# How to get started
+# Getting started
 
 ## Build shared library
 Important to starts by that shared module!
@@ -77,3 +77,5 @@ Open the browser on `http://localhost:3000`
 - [ ] Look at configuration of all projects, .nvmrc, eslint, prettier
 - [ ] clean up project and to get start the project
 
+### To keep in mind
+- [ ] When I started the host application, and navigated by dashboard route, it was 404, even after I started the dashboard application it doesn't had updated for host.

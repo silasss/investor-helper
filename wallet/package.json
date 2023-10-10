@@ -1,11 +1,11 @@
 {
-  "name": "dashboard",
+  "name": "wallet",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "rm -rf .next && next dev -p 3002",
+    "dev": "rm -rf .next && next dev -p 3003",
     "build": "next telemetry disable && next build",
-    "start": "next start -p 3002",
+    "start": "next start -p 3003",
     "lint": "next lint"
   },
   "dependencies": {
