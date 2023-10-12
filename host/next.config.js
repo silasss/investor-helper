@@ -9,10 +9,14 @@ const nextConfig = {
           name: 'host',
           filename: 'static/chunks/remoteEntry.js',
           remotes: {
-            dashboard: 'dashboard@http://localhost:3002/_next/static/chunks/remoteEntry.js',
+            // dashboard: 'dashboard@http://localhost:3002/_next/static/chunks/remoteEntry.js',
             wallet: 'wallet@http://localhost:3003/_next/static/chunks/remoteEntry.js',
           },
-          exposes: {},
+          exposes: {
+            './rootReducer': './src/reducers/root.reducer.ts',
+            './hooks': './src/app/hooks.ts',
+            './store': './src/app/store.ts',
+          },
           shared: {}
         }),
       );

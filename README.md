@@ -79,3 +79,4 @@ Open the browser on `http://localhost:3000`
 
 ### To keep in mind
 - [ ] When I started the host application, and navigated by dashboard route, it was 404, even after I started the dashboard application it doesn't had updated for host.
+- [ ] Any application only can get on after host application is on, each team will starts from them.

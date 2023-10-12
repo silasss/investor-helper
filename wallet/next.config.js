@@ -8,10 +8,13 @@ const nextConfig = {
       config.plugins.push(
         new NextFederationPlugin({
           name: 'wallet',
-          remotes: {},
+          remotes: {
+            host: 'host@http://localhost:3000/_next/static/chunks/remoteEntry.js',
+          },
           filename: 'static/chunks/remoteEntry.js',
           exposes: {
             './wallet': './src/pages/wallet.tsx',
+            // './rootReducer': './src/reducers/root.reducer.ts',
             './pages-map': './src/pages-map.ts',
           },
           shared: {
@@ -22,7 +25,15 @@ const nextConfig = {
             "react-redux": {
               requiredVersion: "^8.1.3",
               singleton: true,
-            }
+            },
+            "graphql-request": {
+              requiredVersion: "^6.1.0",
+              singleton: true,
+            },
+            "graphql": {
+              requiredVersion: "^16.8.1",
+              singleton: true,
+            },
           },
           extraOptions: {
           }

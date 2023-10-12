@@ -28,8 +28,11 @@
     ]
   },
   "dependencies": {
+    "@apollo/client": "^3.8.5",
     "@module-federation/nextjs-mf": "^7.0.8",
+    "@reduxjs/toolkit": "^1.9.7",
     "feather-route-matcher": "^4.0.0",
+    "graphql": "^16.8.1",
     "next": "13.5.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

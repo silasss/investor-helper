@@ -1,10 +1,6 @@
-import { createReducer } from "@reduxjs/toolkit";
-import { User } from "../../models/interfaces/user.interface";
-import { fetchUserLogged } from "./user.actions";
-
-export interface UserState {
-  logged: User | null;
-}
+import { createReducer } from '@reduxjs/toolkit';
+import { User, UserState } from 'shared';
+import { fetchUserLogged } from './user.actions';
 
 const initialState: UserState = {
   logged: null,

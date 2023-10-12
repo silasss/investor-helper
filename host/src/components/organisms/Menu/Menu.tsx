@@ -2,8 +2,9 @@ import Link from "next/link";
 import { useEffect } from "react";
 
 import { useAppDispatch, useAppSelector } from "../../../app/hooks";
-import { selectUserLogged } from "shared";
-import { fetchUserLogged } from "shared";
+
+import { selectUserLogged } from "@/reducers/user/user.selectors";
+import { fetchUserLogged } from "@/reducers/user/user.actions";
 
 const Menu = () => {
   const dispatch = useAppDispatch()
