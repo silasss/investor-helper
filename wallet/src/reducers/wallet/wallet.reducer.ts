@@ -1,5 +1,5 @@
 import { createReducer } from "@reduxjs/toolkit";
-import { Wallet, WalletState } from "shared";
+import { WalletState } from "shared";
 import { fetchWallets } from "./wallet.actions";
 
 const initialState: WalletState = {
@@ -17,11 +17,8 @@ export const walletsReducer = createReducer(initialState, (builder) => {
     wallets: [],
   }));
 
-  builder.addCase(fetchWallets.fulfilled, (state, action) => {
-    // console.log("loaded", action.payload);
-    return {
-      ...state,
-      wallets: action.payload,
-    };
-  });
+  builder.addCase(fetchWallets.fulfilled, (state, action) => ({
+    ...state,
+    wallets: action.payload,
+  }));
 });

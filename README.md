@@ -69,13 +69,19 @@ Open the browser on `http://localhost:3000`
 
 ## Todo
 - [ ] Test global state accessible by remote modules
+- [ ] Fix the typescript mismatch error message on dispatch (Argument of type 'AsyncThunkAction<Wallet[], void, AsyncThunkConfig>' is not assignable to parameter of type 'AnyAction'.)
 - [ ] Include graphql
+- [ ] Configure apollo/client provider
 - [ ] Test graphql on remote modules
+- [ ] app folder?
 - [ ] Add Mui
 - [ ] Test mui on remote modules
+- [ ] Hot reload to module
 - [ ] Configure jest
 - [ ] Look at configuration of all projects, .nvmrc, eslint, prettier
+- [ ] Adjust shared module to not import from root, but show folders like models / interfaces /.. so the import should be: import { Wallet } from 'shared/models' for example
 - [ ] clean up project and to get start the project
+- [ ] Global Header / Main menu
 
 ### To keep in mind
 - [ ] When I started the host application, and navigated by dashboard route, it was 404, even after I started the dashboard application it doesn't had updated for host.

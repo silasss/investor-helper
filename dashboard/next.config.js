@@ -9,7 +9,9 @@ const nextConfig = {
       config.plugins.push(
         new NextFederationPlugin({
           name: 'dashboard',
-          remotes: {},
+          remotes: {
+            host: 'host@http://localhost:3000/_next/static/chunks/remoteEntry.js',
+          },
           filename: 'static/chunks/remoteEntry.js',
           exposes: {
             './dashboard': './src/pages/dashboard.tsx',

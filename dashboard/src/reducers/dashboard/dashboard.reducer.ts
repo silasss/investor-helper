@@ -1,10 +1,6 @@
 import { createReducer } from "@reduxjs/toolkit";
-import { Dashboard } from "../../models/interfaces/dashboard.interface";
+import { DashboardState } from "shared";
 import { fetchDashboards } from "./dashboard.actions";
-
-interface DashboardState {
-  dashboards: Dashboard[];
-}
 
 const initialState: DashboardState = {
   dashboards: [],

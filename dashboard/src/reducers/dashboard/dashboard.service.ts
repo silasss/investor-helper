@@ -1,20 +1,24 @@
-// import { BASE_PATH } from "../../utils/constants";
-import { Dashboard } from "../../models/interfaces/dashboard.interface";
-// import http from '../../utils/http';
-
-// const PATH = `${BASE_PATH}/user`;
+import { BASE_PATH_BFF_API } from "shared";
+import { Dashboard } from "shared";
+import request, { gql } from "graphql-request";
 
 const getDashboards = async (): Promise<Dashboard[]> => {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve([
-        { title: "Dash do Otávio Wallet 1" },
-        { title: "Dash do Otávio Wallet 2" },
-        { title: "Dash do Otávio Wallet 3" },
-      ]);
-    }, 1500);
-  });
-  // return http.get(`${PATH}`);
+  const document = gql`
+    query GetDashboards {
+      wallets {
+        id
+        title
+      }
+    }
+  `;
+
+  const response: { wallets: Dashboard[] } = await request(
+    BASE_PATH_BFF_API,
+    document
+  );
+
+  // @todo replace by dashboards
+  return response.wallets;
 };
 
 export const DashboardService = {

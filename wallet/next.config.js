@@ -14,7 +14,6 @@ const nextConfig = {
           filename: 'static/chunks/remoteEntry.js',
           exposes: {
             './wallet': './src/pages/wallet.tsx',
-            // './rootReducer': './src/reducers/root.reducer.ts',
             './pages-map': './src/pages-map.ts',
           },
           shared: {

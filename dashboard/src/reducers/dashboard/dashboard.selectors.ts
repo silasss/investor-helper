@@ -1,3 +1,4 @@
-import { RootState } from '../../app/store';
+import { RootState } from "shared";
 
-export const selectUserLogged = (state: RootState) => state.user.logged;
+export const selectDashboards = (state: RootState) =>
+  state.dashboard?.dashboards;
